@@ -3,6 +3,8 @@ on:
   pull_request: {}
   # TODO: Remove push to master once we have algolia_prod.yml
   push:
+    check_suite:
+      types: [completed]
     branches:
       - master
 jobs:
